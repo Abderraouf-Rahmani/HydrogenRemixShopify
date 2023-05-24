@@ -523,6 +523,9 @@ video {
 .h-16 {
   height: 4rem;
 }
+.h-full {
+  height: 100%;
+}
 .min-h-screen {
   min-height: 100vh;
 }
@@ -531,6 +534,9 @@ video {
 }
 .w-\[80vw\] {
   width: 80vw;
+}
+.w-\[90vw\] {
+  width: 90vw;
 }
 .max-w-md {
   max-width: 28rem;
@@ -549,6 +555,9 @@ video {
 }
 .grid-flow-row {
   grid-auto-flow: row;
+}
+.grid-flow-col {
+  grid-auto-flow: column;
 }
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -598,6 +607,9 @@ video {
 .overflow-hidden {
   overflow: hidden;
 }
+.overflow-x-scroll {
+  overflow-x: scroll;
+}
 .text-ellipsis {
   text-overflow: ellipsis;
 }
@@ -623,6 +635,14 @@ video {
 .bg-neutral-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(250 250 250 / var(--tw-bg-opacity));
+}
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .p-6 {
   padding: 1.5rem;
@@ -738,6 +758,10 @@ video {
     grid-column: span 2 / span 2;
   }
 
+  .md\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
   .md\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -769,6 +793,10 @@ video {
 
   .md\:gap-8 {
     gap: 2rem;
+  }
+
+  .md\:overflow-x-auto {
+    overflow-x: auto;
   }
 
   .md\:overflow-x-hidden {
